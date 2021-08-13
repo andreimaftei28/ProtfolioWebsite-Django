@@ -110,6 +110,9 @@ portfolio/.env
 portfolio/local_settings.py
 .venv
 portfolio-env/
+portfolio/storage.py
+portfoliodb.dmp
+
 venv/
 ENV/
 env.bak/
