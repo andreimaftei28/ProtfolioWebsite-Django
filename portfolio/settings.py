@@ -39,14 +39,14 @@ DEBUG = env('DJANGO_DEBUG') != 'False'
 ALLOWED_HOSTS = ['*']
 
 # comment next 6 lines out in development
-
+"""
 SECURE_HSTS_SECONDS = 518400
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_HSTS_PRELOAD = True
-
+"""
 
 # Application definition
 
