@@ -38,14 +38,14 @@ DEBUG = env('DJANGO_DEBUG') != 'False'
 ALLOWED_HOSTS = ["localhost", "127.0.0.1", "port-folium.herokuapp.com"]
 
 # comment next 6 lines out in development
-
+"""
 SECURE_HSTS_SECONDS = 518400
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_HSTS_PRELOAD = True
-
+"""
 # Application definition
 
 INSTALLED_APPS = [
@@ -119,6 +119,7 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -157,7 +158,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-#STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
 #MEDIA_ROOT = BASE_DIR
