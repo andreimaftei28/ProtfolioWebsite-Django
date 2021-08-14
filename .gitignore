@@ -108,6 +108,7 @@ celerybeat.pid
 
 portfolio/.env
 portfolio/local_settings.py
+staticfiles/
 .venv
 portfolio-env/
 portfolio/storage.py

@@ -62,18 +62,18 @@
           <a href="https://hyperskill.org/profile/42966850" target="_blank" class="btn btn-secondary my-2">JetBrains Academy Profile</a>
 
         </p>
+        <a href="#projects"  class="btn btn-secondary my-2">
+            <h3>Check out some of my projects</h3>
+      </a>
       </div>
     </div>
   </section>
 
   <section class="py-5 text-center container">
     <div class="album py-5 bg-light">
-      <div class="container">
-        <h1>Check out some of my projects</h1>
-        <br><br>
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+      <div class="container" id="projects">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" >
           {% for job in jobs.all %}
-
           <div class="col">
             <a href="{% url 'detail' job.id %}">
             <div class="card shadow-sm">
