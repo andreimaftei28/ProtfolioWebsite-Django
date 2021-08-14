@@ -35,17 +35,16 @@ SECRET_KEY = env('SECRET_KEY')
 # DEBUG = False
 DEBUG = env('DJANGO_DEBUG') != 'False'
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ["localhost", "127.0.0.1", "port-folium.herokuapp.com"]
 
 # comment next 6 lines out in development
-"""
+
 SECURE_HSTS_SECONDS = 518400
 SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 SECURE_SSL_REDIRECT = True
 SESSION_COOKIE_SECURE = True
 CSRF_COOKIE_SECURE = True
 SECURE_HSTS_PRELOAD = True
-"""
 
 # Application definition
 
@@ -102,6 +101,7 @@ DATABASES = {
     }
 }
 """
+"""
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql'
@@ -119,7 +119,6 @@ DATABASES = {
         'PORT': '5432',
     }
 }
-"""
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators
 
@@ -162,7 +161,7 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 MEDIA_URL = '/media/'
 #MEDIA_ROOT = BASE_DIR
-MEDIA_ROOT = BASE_DIR
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 """
 STATICFILES_FINDERS = (
