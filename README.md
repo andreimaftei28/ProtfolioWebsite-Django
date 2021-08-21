@@ -4,7 +4,7 @@
 
   * This portfolio website is fully configurable or customizable
 
-  * You can costumize it with your own images and or models
+  * You can costumize it with your own images and / or models
 
 
 # Live Demo
